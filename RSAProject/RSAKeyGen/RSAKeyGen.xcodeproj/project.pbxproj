@@ -1,0 +1,332 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		412F92EB1599D14100AD8567 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 412F92EA1599D14100AD8567 /* UIKit.framework */; };
+		412F92ED1599D14100AD8567 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 412F92EC1599D14100AD8567 /* Foundation.framework */; };
+		412F92EF1599D14100AD8567 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 412F92EE1599D14100AD8567 /* CoreGraphics.framework */; };
+		412F92F51599D14100AD8567 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 412F92F31599D14100AD8567 /* InfoPlist.strings */; };
+		412F92F71599D14100AD8567 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 412F92F61599D14100AD8567 /* main.m */; };
+		412F92FB1599D14200AD8567 /* RSAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 412F92FA1599D14200AD8567 /* RSAAppDelegate.m */; };
+		412F931A1599D29300AD8567 /* SecKeyWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 412F93101599D29300AD8567 /* SecKeyWrapper.m */; };
+		412F932D1599DA5700AD8567 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 412F932C1599DA5700AD8567 /* NSData+Base64.m */; };
+		412F932F1599DD4E00AD8567 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 412F932E1599DD4E00AD8567 /* Security.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		412F92E61599D14100AD8567 /* RSAKeyGen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSAKeyGen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		412F92EA1599D14100AD8567 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		412F92EC1599D14100AD8567 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		412F92EE1599D14100AD8567 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		412F92F21599D14100AD8567 /* RSAKeyGen-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RSAKeyGen-Info.plist"; sourceTree = "<group>"; };
+		412F92F41599D14100AD8567 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		412F92F61599D14100AD8567 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		412F92F81599D14100AD8567 /* RSAKeyGen-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSAKeyGen-Prefix.pch"; sourceTree = "<group>"; };
+		412F92F91599D14200AD8567 /* RSAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSAAppDelegate.h; sourceTree = "<group>"; };
+		412F92FA1599D14200AD8567 /* RSAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSAAppDelegate.m; sourceTree = "<group>"; };
+		412F930F1599D29300AD8567 /* SecKeyWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecKeyWrapper.h; sourceTree = "<group>"; };
+		412F93101599D29300AD8567 /* SecKeyWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecKeyWrapper.m; sourceTree = "<group>"; };
+		412F932B1599DA5700AD8567 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		412F932C1599DA5700AD8567 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		412F932E1599DD4E00AD8567 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		412F92E31599D14100AD8567 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				412F932F1599DD4E00AD8567 /* Security.framework in Frameworks */,
+				412F92EB1599D14100AD8567 /* UIKit.framework in Frameworks */,
+				412F92ED1599D14100AD8567 /* Foundation.framework in Frameworks */,
+				412F92EF1599D14100AD8567 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		412F92DB1599D14100AD8567 = {
+			isa = PBXGroup;
+			children = (
+				412F92F01599D14100AD8567 /* RSAKeyGen */,
+				412F92E91599D14100AD8567 /* Frameworks */,
+				412F92E71599D14100AD8567 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		412F92E71599D14100AD8567 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				412F92E61599D14100AD8567 /* RSAKeyGen.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		412F92E91599D14100AD8567 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				412F932E1599DD4E00AD8567 /* Security.framework */,
+				412F92EA1599D14100AD8567 /* UIKit.framework */,
+				412F92EC1599D14100AD8567 /* Foundation.framework */,
+				412F92EE1599D14100AD8567 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		412F92F01599D14100AD8567 /* RSAKeyGen */ = {
+			isa = PBXGroup;
+			children = (
+				412F932A1599DA5700AD8567 /* Utils */,
+				412F93011599D29300AD8567 /* Externals */,
+				412F92F91599D14200AD8567 /* RSAAppDelegate.h */,
+				412F92FA1599D14200AD8567 /* RSAAppDelegate.m */,
+				412F92F11599D14100AD8567 /* Supporting Files */,
+			);
+			path = RSAKeyGen;
+			sourceTree = "<group>";
+		};
+		412F92F11599D14100AD8567 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				412F92F21599D14100AD8567 /* RSAKeyGen-Info.plist */,
+				412F92F31599D14100AD8567 /* InfoPlist.strings */,
+				412F92F61599D14100AD8567 /* main.m */,
+				412F92F81599D14100AD8567 /* RSAKeyGen-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		412F93011599D29300AD8567 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				412F930E1599D29300AD8567 /* SecKeyWrapper */,
+			);
+			path = Externals;
+			sourceTree = SOURCE_ROOT;
+		};
+		412F930E1599D29300AD8567 /* SecKeyWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				412F930F1599D29300AD8567 /* SecKeyWrapper.h */,
+				412F93101599D29300AD8567 /* SecKeyWrapper.m */,
+			);
+			path = SecKeyWrapper;
+			sourceTree = "<group>";
+		};
+		412F932A1599DA5700AD8567 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				412F932B1599DA5700AD8567 /* NSData+Base64.h */,
+				412F932C1599DA5700AD8567 /* NSData+Base64.m */,
+			);
+			path = Utils;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		412F92E51599D14100AD8567 /* RSAKeyGen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 412F92FE1599D14200AD8567 /* Build configuration list for PBXNativeTarget "RSAKeyGen" */;
+			buildPhases = (
+				412F92E21599D14100AD8567 /* Sources */,
+				412F92E31599D14100AD8567 /* Frameworks */,
+				412F92E41599D14100AD8567 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSAKeyGen;
+			productName = RSAKeyGen;
+			productReference = 412F92E61599D14100AD8567 /* RSAKeyGen.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		412F92DD1599D14100AD8567 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RSA;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = SoftTeco;
+			};
+			buildConfigurationList = 412F92E01599D14100AD8567 /* Build configuration list for PBXProject "RSAKeyGen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 412F92DB1599D14100AD8567;
+			productRefGroup = 412F92E71599D14100AD8567 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				412F92E51599D14100AD8567 /* RSAKeyGen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		412F92E41599D14100AD8567 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				412F92F51599D14100AD8567 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		412F92E21599D14100AD8567 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				412F92F71599D14100AD8567 /* main.m in Sources */,
+				412F92FB1599D14200AD8567 /* RSAAppDelegate.m in Sources */,
+				412F931A1599D29300AD8567 /* SecKeyWrapper.m in Sources */,
+				412F932D1599DA5700AD8567 /* NSData+Base64.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		412F92F31599D14100AD8567 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				412F92F41599D14100AD8567 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		412F92FC1599D14200AD8567 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					Standard,
+					armv6,
+					armv7,
+				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		412F92FD1599D14200AD8567 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					Standard,
+					armv6,
+					armv7,
+				);
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		412F92FF1599D14200AD8567 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					Standard,
+					armv6,
+					armv7,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RSAKeyGen/RSAKeyGen-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "RSAKeyGen/RSAKeyGen-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		412F93001599D14200AD8567 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					Standard,
+					armv6,
+					armv7,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RSAKeyGen/RSAKeyGen-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "RSAKeyGen/RSAKeyGen-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		412F92E01599D14100AD8567 /* Build configuration list for PBXProject "RSAKeyGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				412F92FC1599D14200AD8567 /* Debug */,
+				412F92FD1599D14200AD8567 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		412F92FE1599D14200AD8567 /* Build configuration list for PBXNativeTarget "RSAKeyGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				412F92FF1599D14200AD8567 /* Debug */,
+				412F93001599D14200AD8567 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 412F92DD1599D14100AD8567 /* Project object */;
+}
